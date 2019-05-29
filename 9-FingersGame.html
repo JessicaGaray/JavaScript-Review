@@ -8,12 +8,12 @@
         <button id="sendGuess">Submit</button>
         <button id="giveUp">Give Up</button>
         <script type="text/javascript">
-            var fingers = (Math.floor(Math.random()*5) + 1);
+            var fingers = 0;
             var userGuess = 0; 
 
             document.getElementById("sendGuess").onclick = function(){
                 userGuess = document.getElementById("userGuess").value;
-
+                fingers = (Math.floor(Math.random() * 5) + 1);
                 if (userGuess == fingers){
                     alert("You got it right!");
                 }

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+    <head></head>
+    <body>
+        
+        <div id="tweetDiv">
+
+        </div>
+        <script type="text/javascript">
+        var tweetString = "";
+
+            var tweets = ["a", "b", "c", "d"];
+                for (var i = 0; i < tweets.length; i++) {
+                    tweetString = tweetString + "<p>" + tweets[i] + "</p>";
+            }
+
+            document.getElementById("tweetDiv").innerHTML = tweetString;
+        // var tweets = ["a","b","c","d"];
+        //     for (var i = 0; i < tweets.length; i++) {
+        //         alert(tweets[i]);
+        //     }
+
+            // for (var i= 5; i >= 1; --i){
+            //     alert(i);
+            // }
+        </script>
+    </body>
+</html>
