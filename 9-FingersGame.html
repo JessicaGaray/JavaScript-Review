@@ -6,9 +6,10 @@
         <h4>How many fingers am I holding up?</h4>
         <input type="text" id="userGuess">
         <button id="sendGuess">Submit</button>
+        <button id="giveUp">Give Up</button>
         <script type="text/javascript">
             var fingers = (Math.floor(Math.random()*5) + 1);
-            var userGuess = 0;
+            var userGuess = 0; 
 
             document.getElementById("sendGuess").onclick = function(){
                 userGuess = document.getElementById("userGuess").value;
@@ -16,9 +17,18 @@
                 if (userGuess == fingers){
                     alert("You got it right!");
                 }
-                else{
-                    alert("There were " + fingers + " fingers.");
+                else if (userGuess >= fingers){
+                    alert("The guess is too high!");
                 }
+                else if (userGuess <= fingers) {
+                    alert("The guess is too low!");
+                }
+                else {
+                    alert("Error!");
+                }
+            }
+            document.getElementById("giveUp").onclick = function(){
+                alert("There were " + fingers + " fingers.");
             }
         </script>
     </body>
