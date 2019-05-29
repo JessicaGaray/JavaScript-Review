@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>What is the magic word?</h1>
+        <input type="text" id="userWord">
+        <button id="submit">Submit</button>
+        
+
+        <script type="text/javascript">
+            /*var x = 2;
+
+            if (x == 1){
+
+                alert("x is 1");
+
+            } 
+            else {
+                alert("x is not 1");
+            }*/
+
+            document.getElementById("submit").onclick = function(){
+                var userWord = document.getElementById("userWord").value;
+                var magicWord = "owo";
+                if (userWord == magicWord){
+                    alert("You got it right!");
+                }
+                else {
+                    alert("Cease to exist!");
+                }
+            }
+        </script>
+    </body>
+</html>

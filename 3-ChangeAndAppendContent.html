@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <p id="text">Hello World!</p>
+    <button id="my-button">Change text</button>
+
+    <p id="second-p">JavaScript is ...</p>
+    <button id="second-b">Append text</button>
+
+    <p id="empty"></p>
+    <button id="create-p">Create text</button>
+    
+    <script type="text/javascript">
+        // Changing Content
+        document.getElementById("my-button").onclick = function () {
+            // alert("button clicked");
+            document.getElementById("text").innerHTML = "hellow";
+        }
+        
+        // AppendingCode
+        document.getElementById("second-b").onclick = function () {
+                
+                document.getElementById("second-p").innerHTML = "I think  " + document.getElementById("second-p").innerHTML + " awesome!";
+            }
+
+        //Content out of thin air
+        //You can also add tags in there
+        document.getElementById("create-p").onclick = function () {
+
+                document.getElementById("empty").innerHTML = "<h1>boo!<h2>";
+            }
+    </script>
+</body>
+
+</html>
